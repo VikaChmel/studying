@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Продажа имущества</title>
+</head>
+<body>
+	<form action="#" method="post" enctype="multipart/form-data">
+		<h1>Анкета на продажу имущества</h1>
+		<h2>Регестрация:</h2>
+		<div>
+			<label for="username">Имя/Фамилия:</label>
+			<br>
+			<input type="text" name="username" id="username" placeholder="Валера Дробовик">
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<br>
+			<input type="email" id="email" placeholder="drobovikvalera@gmail.com">
+		</div>
+		<div>
+			<label for="password">Пароль:</label>
+			<br>
+			<input type="password" name="userpass" id="password">
+		</div>
+		<div>
+			<label for="tel">Телефон:</label>
+			<br>
+			<input type="tel" name="userphone" id="tel">
+		</div>
+		<h2>Продаю:</h2>
+		<p>Имущество:</p>
+		<p>
+			<input type="checkbox" name="car">Машина
+		</p>
+		<p>
+			<input type="checkbox" name="bike">Велосипед
+		</p>
+		<p>
+			<input type="checkbox" name="skate">Скейт
+		</p>
+		<div>
+			<p>Состояние:</p>
+			<input type="radio" name="1">Новое
+			<input type="radio" name="1">Б/У
+		</div>
+		<div>
+			<label for="color">Цвет:</label>
+			<input type="color" id="color">
+		</div>
+		<p>Фотография имущества</p>
+		<input type="file" name="userphoto">
+		<p>Описание:</p>
+		<textarea name="text"></textarea>
+		<br>
+		<button type="submit">Отправить</button>
+		<button type="reset">Очистить</button>
+		
+	</form>
+</body>
+</html>
