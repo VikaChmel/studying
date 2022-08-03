@@ -1,13 +1,12 @@
 
 .line{
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-	line-height: 5px;
+	margin-bottom: 0;
 }
 .text{
 	font-weight: 600;
 }
 .link{
-	color: rgb(0, 0, 255);
 	text-decoration: none;
 }
 .italic{
