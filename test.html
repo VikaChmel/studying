@@ -18,27 +18,9 @@
 			align-items: center;
 		}
 
-		img {
-			max-width: 100%;
-		}
-
 		li {
 			list-style: none;
 		}
-
-		.icons-list {
-			display: flex;
-			gap: 20px;
-			align-items: center;
-		}
-
-		/*li {*/
-		/*	margin-left: 15px;*/
-		/*}*/
-
-		/*li:first-child {*/
-		/*	margin-left: 0;*/
-		/*}*/
 
 		svg {
 			width: 40px;
@@ -46,24 +28,27 @@
 		}
 		
 		.parent {
-			/*display: flex;*/
-			/*justify-content: center;*/
 			position: relative;
-			/*margin: 0 auto;*/
 			cursor: pointer;
 			width: 80%;
 		}
 
 		.icons-list {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+
 			transition: 0.3s ease;
 			opacity: 0;
 		}
 		
 		.img {
+			max-width: 100%;
 			transition: 0.3s ease;
 		}
 
