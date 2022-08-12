@@ -17,10 +17,6 @@ h2 {
 	font-size: 20px;
 	/* line height normal; */
 }
-<<<<<<< HEAD
-.page-header {
-	background-color:rgb(250, 232, 228);
-=======
 
 .photo-2 {
 	width: 168px;
@@ -36,7 +32,6 @@ h2 {
 	background-color: rgb(250, 232, 228);
 	width: 1000px;
 	margin: auto;
->>>>>>> a4fa90ef66a093b5fdae556a2b70741fa1b4faf6
 }
 .site-navigation {
 	font-size: 13px;
