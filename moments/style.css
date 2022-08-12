@@ -1,36 +1,40 @@
-body{
+body {
 	font-family: 'Raleway', 'Arial', sans-serif;
 	/* font family 'Roboto Serif', 'Arial', serif; */
 	color: rgb(13, 67, 80);
 	font-size: 14px;
 	line-height: 21px;
 }
-h3{
+.image-title {
+	width: 274px;
+	height: 72px;
+}
+h3 {
 	font-weight: 700;
 }
-h2{
+h2 {
 	font-weight: 700;
 	font-size: 20px;
-	/* lineheight normal; */
+	/* line height normal; */
 }
-.page-header{
+.page-header {
 	background-color:rgb(250, 232, 228);
 }
-.site-navigation{
+.site-navigation {
 	font-size: 13px;
 	list-style: none;
 }
-.site-navigation a{
+.site-navigation a {
 	color: rgb(114, 112, 112);
 	font-weight: 700;
 	text-transform: uppercase;
 	line-height: 16px;
 	text-decoration: none;
 }
-.site-navigation a:hover{
+.site-navigation a:hover {
 	color: #000;
 }
-.features-list{
+.features-list {
 	list-style: none;
 }
 .features-list-item h3 {
@@ -38,28 +42,33 @@ h2{
 	line-height: 17px;
 	list-style: none;
 }
-.team-list{
+
+.team-list {
 	list-style: none;
 }
-.team-list-name{
+.team-list-image {
+	width: 168px;
+	height: 300px;
+}
+.team-list-name {
 	font-size: 22px;
 	line-height: 26px;
 	color: rgb(51, 75, 57);
 }
-.team-list-occupation{
+.team-list-occupation {
 	font-size: 13px;
 	line-height: 16px;
 	color: rgb(192, 65, 65);
 }
-.page-footer{
+.page-footer {
 	background-color: rgb(250, 232, 228);
 }
-.location-name{
+.location-name {
 	text-transform: uppercase;
 }
-.socials-name{
+.socials-name {
 	text-transform: uppercase;
 }
-.download{
+.download {
 	text-transform: uppercase;
 }
