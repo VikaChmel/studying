@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container{
+			width: 50vw;
+			margin: 0 auto;
+			background: antiquewhite;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		li {
+			list-style: none;
+		}
+
+		svg {
+			width: 40px;
+			fill: purple;
+		}
+		
+		.parent {
+			position: relative;
+			cursor: pointer;
+			width: 80%;
+		}
+
+		.icons-list {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			transition: 0.3s ease;
+			opacity: 0;
+		}
+		
+		.img {
+			max-width: 100%;
+			transition: 0.3s ease;
+		}
+
+		.parent:hover .img{
+			filter: brightness(0.7);
+		}
+
+		.parent:hover .icons-list{
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="parent">
+			<img class="img" src="https://vjoy.cc/wp-content/uploads/2019/07/1-1.jpg" alt="">
+			<ul class="icons-list">
+				<li>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+						<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+						<path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+					</svg>
+				</li>
+				<li>
+					<svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+						<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+						<path d="M320 96V416C341.011 416 361.818 411.861 381.23 403.821C400.641 395.78 418.28 383.995 433.138 369.138C447.995 354.28 459.78 336.641 467.821 317.23C475.861 297.818 480 277.011 480 256C480 234.989 475.861 214.182 467.821 194.771C459.78 175.359 447.995 157.72 433.138 142.863C418.28 128.005 400.641 116.22 381.23 108.179C361.818 100.139 341.011 96 320 96ZM0 256L160.002 416L320.003 256L160.002 96L0 256ZM480 256C480 277.011 484.138 297.818 492.179 317.23C500.219 336.643 512.005 354.28 526.862 369.138C541.72 383.995 559.357 395.781 578.77 403.821C598.182 411.862 618.989 416 640 416V96C597.565 96 556.869 112.858 526.862 142.863C496.857 172.869 480 213.565 480 256Z"/>
+					</svg>
+				</li>
+				<li>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+						<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+						<path d="M248 167.5l64.9 98.8H183.1l64.9-98.8zM496 256c0 136.9-111.1 248-248 248S0 392.9 0 256 111.1 8 248 8s248 111.1 248 248zm-99.8 82.7L248 115.5 99.8 338.7h30.4l33.6-51.7h168.6l33.6 51.7h30.2z"/>
+					</svg>
+				</li>
+			</ul>
+		</div>
+		<p>dadasbdjfjdshfj</p>
+	</div>
+</body>
+</html>
