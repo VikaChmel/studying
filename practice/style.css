@@ -1,0 +1,60 @@
+body {
+	padding: 20px;
+}
+
+li {
+	list-style: none;
+}
+.container {
+	border: 2px solid #000;
+	width: 300px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.img {
+	max-width: 100%;
+}
+
+svg {
+	width: 40px;
+	fill: #fff;
+}
+
+.icons-list {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: 0.4s ease;
+}
+
+.parent {
+	position: relative;
+	cursor: pointer;
+}
+
+.parent:hover .icons-list {
+	opacity: 1;
+}
+
+.parent:hover .img {
+	filter: brightness(0.6);
+}
+
+p {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.text-title {
+	font-size: 25px;
+	color: brown;
+}
