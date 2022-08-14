@@ -5,29 +5,36 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 }
+
 .image-title {
 	width: 274px;
 	height: 72px;
 }
+
 h3 {
 	font-weight: 700;
 }
+
 h2 {
 	font-weight: 700;
 	font-size: 20px;
 	margin-left: 20px;
 }
+
 .photo-2 {
 	width: 168px;
 	height: 300px;
 }
+
 .page-header{
 	background-color: rgb(250, 232, 228);
 }
+
 .site-navigation {
 	font-size: 13px;
 	list-style: none;
 }
+
 .site-navigation a {
 	color: rgb(114, 112, 112);
 	font-weight: 700;
@@ -35,14 +42,17 @@ h2 {
 	line-height: 16px;
 	text-decoration: none;
 }
+
 .site-navigation a:hover {
 	color: #000;
 	/* margin-left: 20px;
 	transition: 0.3s; */
 }
+
 .features-list {
 	list-style: none;
 }
+
 .features-list-item h3 {
 	color: rgb(53, 15, 54);
 	line-height: 17px;
@@ -52,29 +62,36 @@ h2 {
 .team-list {
 	list-style: none;
 }
+
 .team-list-image {
 	width: 168px;
 	height: 300px;
 }
+
 .team-list-name {
 	font-size: 22px;
 	line-height: 26px;
 	color: rgb(51, 75, 57);
 }
+
 .team-list-occupation {
 	font-size: 13px;
 	line-height: 16px;
 	color: rgb(192, 65, 65);
 }
+
 .page-footer {
 	background-color: rgb(250, 232, 228);
 }
+
 .location-name {
 	text-transform: uppercase;
 }
+
 .socials-name {
 	text-transform: uppercase;
 }
+
 .download {
 	text-transform: uppercase;
 }
