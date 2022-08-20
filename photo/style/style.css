@@ -96,20 +96,28 @@ body {
 
 main {
   flex: 1 1 auto;
+  margin-top: 84px;
+}
+
+.header__width {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 45px;
+  margin: 0 auto;
+  height: 84px;
 }
 
 .header {
   background-color: rgb(194, 198, 202);
-  position: relative;
-  height: 84px;
+  position: fixed;
+  z-index: 10;
   width: 100%;
 }
 .header__navigation {
-  position: absolute;
   display: flex;
   gap: 20px;
-  right: 100px;
-  top: 30px;
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
@@ -123,10 +131,12 @@ main {
 }
 
 .header__logo {
-  position: absolute;
   width: 220px;
   height: 84px;
-  left: 30px;
+  display: block;
+}
+.header__logo img {
+  max-width: 100%;
 }
 
 h2 {
@@ -141,6 +151,7 @@ h2 {
   height: 270px;
 }
 .gallery__list {
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   gap: 70px;
