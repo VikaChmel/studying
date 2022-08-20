@@ -1,3 +1,5 @@
+@import 'null.scss';
+
 $color: rgb(194, 198, 202);
 
 // header style
@@ -24,10 +26,18 @@ main {
 		gap: 20px;
 		right: 100px;
 		top: 30px;
+		font-size: 17px;
+		line-height: 20px;
+		text-transform: uppercase;
 
-		// top: 50%;
-		// bottom: 33px;
+	& a {
+		color: #000;
+		&:hover {
+			color: rgb(255, 255, 255);
+			transition: 0.2s ease;
+		}
 	}
+
 }
 
 .header__logo {
@@ -37,21 +47,6 @@ main {
 	left: 30px;
 }
 
-.header__navigation {
-	font-size: 17px;
-	line-height: 20px;
-	text-transform: uppercase;
-
-	& a {
-		color: #000;
-	}
-
-	& a:hover {
-		color: rgb(255, 255, 255);
-		transition: 0.2s ease;
-	}
-	
-}
 
 // main style
 
@@ -66,7 +61,7 @@ h2 {
 
 .gallery {
 
-	& img {
+	img {
 		width: 210px;
 		height: 270px;
 	}
