@@ -30,14 +30,14 @@ main {
 		line-height: 20px;
 		text-transform: uppercase;
 
-	& a {
+	a {
 		color: #000;
 		&:hover {
 			color: rgb(255, 255, 255);
 			transition: 0.2s ease;
+			}
 		}
-	}
-
+	}	
 }
 
 .header__logo {
