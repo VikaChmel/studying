@@ -1,10 +1,19 @@
-.page-header {
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.header {
   background-color: rgb(194, 198, 202);
   position: relative;
   height: 84px;
   width: 100%;
 }
-.page-header .site-navigation {
+.header__navigation {
   position: absolute;
   display: flex;
   gap: 20px;
@@ -12,22 +21,22 @@
   top: 30px;
 }
 
-.site-image {
+.header__logo {
   position: absolute;
   width: 220px;
   height: 84px;
   left: 30px;
 }
 
-.site-navigation {
+.header__navigation {
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
 }
-.site-navigation a {
+.header__navigation a {
   color: #000;
 }
-.site-navigation a:hover {
+.header__navigation a:hover {
   color: rgb(255, 255, 255);
   transition: 0.2s ease;
 }
@@ -43,20 +52,31 @@ h2 {
   width: 210px;
   height: 270px;
 }
-.gallery .gallery-list {
+.gallery__list {
   display: flex;
   justify-content: center;
   gap: 70px;
 }
-
-.gallery-list-item {
+.gallery__item {
   width: 220px;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.gallery-list-item p {
+.gallery__item p {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.gallery__item {
+  width: 220px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery__item p {
   text-align: center;
   margin: 15px 0;
 }
@@ -74,4 +94,14 @@ svg:hover {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+footer {
+  background-color: rgb(219, 221, 223);
+  height: auto;
+  width: 100%;
+  padding: 20px 0;
+}
+footer .location {
+  text-align: center;
 }
