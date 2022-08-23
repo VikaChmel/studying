@@ -181,6 +181,13 @@ svg:hover {
   align-items: center;
 }
 
+.footer__container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 20px;
+}
 .footer .title {
   margin: 20px 0;
   text-transform: uppercase;
@@ -207,6 +214,5 @@ svg:hover {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
 }

@@ -50,6 +50,7 @@ main {
 
 		a {
 			color: #000;
+
 			&:hover {
 				color: rgb(255, 255, 255);
 				transition: 0.2s ease;
@@ -120,13 +121,13 @@ svg {
 	// margin-top: 100px;
 	// // padding: 20px 0;
 
-	// &__container {
-	// 	max-width: 100%;
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	gap: 0 20px;
-	// 	// padding-top: 20px;	
-	// }
+	&__container {
+		max-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+		padding-top: 20px;
+	}
 
 	.title {
 		margin: 20px 0;
@@ -192,9 +193,7 @@ svg {
 		height: auto;
 		max-width: 1200px;
 		display: flex;
-		// justify-content:center;
 		justify-content: space-between;
-		align-items: center;
 		margin: 0 auto;
 	}
 }
