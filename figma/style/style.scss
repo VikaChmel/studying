@@ -1,0 +1,154 @@
+@import 'null.scss';
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&family=Raleway:wght@300;400;700&family=Roboto+Serif:ital,opsz,wght@1,8..144,100;1,8..144,200&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto+Serif:ital,opsz,wght@1,8..144,100;1,8..144,200&display=swap');
+
+$color-black:#2D2D2D;
+$color-white:#FFFFFF;
+
+.container {
+	// display: flex;
+	// flex-wrap: wrap;
+	width: 1280px;
+
+	.header {
+		width: 1280px;
+		height: 80px;
+		background: $color-white;
+	
+		&__nav {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			text-decoration-line: underline;
+		}
+	
+		&__logo {
+			color: $color-black;
+			width: 49px;
+			height: 30px;
+			margin: 24.5px 0 25.5px 44.28px;
+	
+			font-family: 'Epilogue';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 30px;
+		}
+	
+		&__link {
+			display: flex;
+			align-items: center;
+	
+			a {
+				width: 41px;
+				height: 27px;
+				color: $color-black;
+				
+				font-family: 'Epilogue';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 17px;
+				line-height: 27px;
+			}
+	
+			li:first-child {
+				margin: 26.5px 50px 26.5px 0;
+			}
+	
+			li:nth-child(2) {
+				margin: 26.5px 51px 26.5px 0;
+			}
+	
+			li:last-child {
+				margin: 26.5px 57.55px 26.5px 0;
+			}
+		}
+	
+	}
+
+	.section-headline {
+		width: 1280px;
+		height: 720px;
+		background: $color-white;
+		display: flex;
+		justify-content: space-between;
+
+		&__text {
+			// display: inline-block;
+			width: 244px;
+			height: 30px;
+			margin: 165.5px 0 0 100px;
+
+			p {
+				font-family: Epilogue;
+				text-align: left;
+			}
+
+			p:first-child {
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 30px;
+
+			}
+
+			p:nth-child(2) {
+				font-size: 100px;
+				font-weight: 600;
+				line-height: 102.5px;
+				margin: 46px 0 50px 0;
+			}
+
+			p:last-child {
+				width: 417.7px;
+				height: 54px;
+
+				font-size: 17px;
+				font-weight: 400;
+				line-height: 27px;
+
+			}
+		}
+
+		&__image {
+			position: relative;
+			display: inline-block;
+			width: 408.97px;
+			height: 549.09px;
+			margin: 92.99px 144.33px 0 0;
+
+			img {
+				position: absolute;
+
+				.decorator-img {
+					width: 125.4px;
+					height: 129.77px;
+				}
+			}
+			
+			img:nth-child(2) {
+				left: 297.9px;
+				bottom: 434.81px;
+			}
+
+			img:nth-child(3) {
+				bottom: 64.21px;
+				right: 346.27px;
+			}
+
+			img:nth-child(4) {
+				width: 75.33px;
+				right: 330.05px;
+				top: 23.24px;
+			}
+
+			img:nth-child(5) {
+				width: 73.73px;
+				left: 350px;
+				top: 463.85px;
+			}
+		}
+	}
+}
+
