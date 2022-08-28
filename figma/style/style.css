@@ -73,41 +73,34 @@ textarea {
   resize: none;
 }
 
-.container {
-  width: 1280px;
+.container-header {
+  margin: auto;
+  max-width: 1280px;
+  padding: 0 40px;
 }
-.container .header {
-  width: 1280px;
+.container-header .header {
+  max-width: 100%;
   height: 80px;
   background: #FFFFFF;
-}
-.container .header__nav {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
-.container .header__logo {
+.container-header .header__logo {
   color: #2D2D2D;
-  width: 49px;
-  height: 30px;
-  margin: 24.5px 0 25.5px 44.28px;
   font-family: "Epilogue";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
 }
-.container .header__link {
+.container-header .header__link {
   display: flex;
-  align-items: center;
+  gap: 50px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
-.container .header__link a {
-  width: 41px;
-  height: 27px;
+.container-header .header__link a {
   color: #2D2D2D;
   font-family: "Epilogue";
   font-style: normal;
@@ -115,78 +108,71 @@ textarea {
   font-size: 17px;
   line-height: 27px;
 }
-.container .header__link li:first-child {
-  margin: 26.5px 50px 26.5px 0;
+
+.container-main {
+  max-width: 1180px;
+  margin: auto;
+  padding: 0 40px;
 }
-.container .header__link li:nth-child(2) {
-  margin: 26.5px 51px 26.5px 0;
-}
-.container .header__link li:last-child {
-  margin: 26.5px 57.55px 26.5px 0;
-}
-.container .section-headline {
-  width: 1280px;
-  height: 720px;
+.container-main .section-headline {
+  width: 100%;
   background: #FFFFFF;
+  padding: 93px 10px 0 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.container .section-headline__text {
-  width: 244px;
-  height: 30px;
-  margin: 165.5px 0 0 100px;
+.container-main .section-headline__text {
+  width: 463px;
 }
-.container .section-headline__text p {
+.container-main .section-headline__text p {
   font-family: Epilogue;
   text-align: left;
 }
-.container .section-headline__text p:first-child {
+.container-main .section-headline__text p:first-child {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
 }
-.container .section-headline__text p:nth-child(2) {
+.container-main .section-headline__text p:nth-child(2) {
   font-size: 100px;
   font-weight: 600;
   line-height: 102.5px;
   margin: 46px 0 50px 0;
 }
-.container .section-headline__text p:last-child {
-  width: 417.7px;
-  height: 54px;
+.container-main .section-headline__text p:last-child {
+  width: 417px;
   font-size: 17px;
   font-weight: 400;
   line-height: 27px;
 }
-.container .section-headline__image {
+.container-main .section-headline__image {
   position: relative;
   display: inline-block;
-  width: 408.97px;
-  height: 549.09px;
-  margin: 92.99px 144.33px 0 0;
+  width: 410px;
+  height: 550px;
 }
-.container .section-headline__image img {
+.container-main .section-headline__image .img::before {
+  content: url(/figma/images/arrow3.svg);
+  position: absolute;
+  z-index: 3;
+  right: 330px;
+  top: 23px;
+}
+.container-main .section-headline__image .img::after {
+  content: url(/figma/images/arrow.png);
+  position: absolute;
+  left: 342px;
+  top: 463.85px;
+}
+.container-main .section-headline__image img {
   position: absolute;
 }
-.container .section-headline__image img .decorator-img {
-  width: 125.4px;
-  height: 129.77px;
+.container-main .section-headline__image .decorator-img-1 {
+  left: 298px;
+  bottom: 435px;
 }
-.container .section-headline__image img:nth-child(2) {
-  left: 297.9px;
-  bottom: 434.81px;
-}
-.container .section-headline__image img:nth-child(3) {
-  bottom: 64.21px;
-  right: 346.27px;
-}
-.container .section-headline__image img:nth-child(4) {
-  width: 75.33px;
-  right: 330.05px;
-  top: 23.24px;
-}
-.container .section-headline__image img:nth-child(5) {
-  width: 73.73px;
-  left: 350px;
-  top: 463.85px;
+.container-main .section-headline__image .decorator-img-2 {
+  bottom: 64px;
+  right: 346px;
 }
