@@ -76,7 +76,7 @@ textarea {
 .container-header {
   margin: auto;
   max-width: 1280px;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 .container-header .header {
   max-width: 100%;
@@ -112,18 +112,17 @@ textarea {
 .container-main {
   max-width: 1180px;
   margin: auto;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 .container-main .section-headline {
-  width: 100%;
   background: #FFFFFF;
-  padding: 93px 10px 0 0;
+  margin-top: 93px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .container-main .section-headline__text {
-  width: 463px;
+  max-width: 463px;
 }
 .container-main .section-headline__text p {
   font-family: Epilogue;
@@ -174,9 +173,8 @@ textarea {
   right: 346px;
 }
 .container-main .section-social {
-  width: 100%;
   background-color: #FFFFFF;
-  padding-top: 145px;
+  margin-top: 145px;
 }
 .container-main .section-social__icons {
   display: flex;
@@ -184,15 +182,13 @@ textarea {
   gap: 115px;
 }
 .container-main .section-products {
-  max-width: 100%;
   background-color: #FFFFFF;
-  padding-top: 148px;
+  margin-top: 148px;
   display: flex;
   justify-content: center;
   gap: 140px;
 }
 .container-main .section-products__box {
-  max-width: 330px;
   padding: 60px 0;
   display: flex;
   flex-direction: column;
@@ -207,7 +203,7 @@ textarea {
   margin: 63px 0 19px 0;
 }
 .container-main .section-products__box p {
-  width: 250px;
+  max-width: 250px;
   font-family: Epilogue;
   font-size: 17px;
   font-weight: 400;
