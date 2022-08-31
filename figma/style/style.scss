@@ -124,12 +124,13 @@ main {
 		.section-social {
 			background-color: $color-white;
 			margin-top: 145px;
-			// justify-content: center;
 			
 			&__icons {
 				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
 				align-items: center;
-				gap: 115px;
+				gap: 50px;
 			}
 		}
 		
@@ -203,14 +204,8 @@ main {
 		}
 		
 		.section-works {
-			// max-width: 100%;
 			background-color: $color-white;
 			margin-top: 126px;
-			
-			// display: flex;
-			// justify-content: center;
-			// gap: 45px;
-			// flex-wrap: wrap;
 			
 			h2 {
 				font-family: Epilogue;
@@ -218,8 +213,7 @@ main {
 				font-weight: 600;
 				line-height: 42px;
 				text-align: center;
-				// margin-bottom: 56px;
-				padding-bottom: 56px;
+				margin-bottom: 56px;
 			}
 			
 			&__container {
@@ -229,19 +223,12 @@ main {
 				flex-wrap: wrap;
 			}
 			
-			h2 {
-				font-family: Epilogue;
-				font-size: 32px;
-				font-weight: 600;
-				line-height: 42px;
-				text-align: center;
-				// margin-bottom: 56px;
-				padding-bottom: 56px;
-			}
-			
 			&__box {
-				max-width: 50%;
-				// max-width: 330px;
+				max-width: 330px;
+				
+				img {
+					max-width: 100%;
+				}
 				
 				h3 {
 					font-family: Epilogue;
@@ -249,7 +236,7 @@ main {
 					font-weight: 600;
 					line-height: 30px;
 					text-align: left;
-					padding: 25px 0 10px 0;
+					margin: 25px 0 10px 0;
 				}
 				
 				p {
