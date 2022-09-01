@@ -313,9 +313,8 @@ main .container-main .section-comments__review .clients {
   gap: 13px;
   padding-left: 28px;
 }
-main .container-main .section-comments__review .clients img .people {
-  max-width: 100%;
-  max-height: 100%;
+main .container-main .section-comments__review .clients .img {
+  width: 100%;
 }
 main .container-main .section-comments__review .clients .stars p {
   font-family: Epilogue;

@@ -291,20 +291,15 @@ main {
 					gap: 13px;
 					// margin: 134px 0 28px 0;
 					padding-left: 28px;
-					// background-color: antiquewhite;
 					
-					img {
-						
-						.people {
-							max-width: 100%;
-							max-height: 100%;
-						}
+					.img {
+						width: 100%;
 					}
 					
 					.stars {
 						// margin-left: 50px;
 						// align-items: center;
-
+						
 						p {
 							// max-width: 135px;
 							font-family: Epilogue;
@@ -315,6 +310,7 @@ main {
 						}
 					}
 				}
+				
 				// p {
 				// 	font-family: Epilogue;
 				// 	font-size: 20px;
