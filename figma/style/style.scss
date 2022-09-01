@@ -248,5 +248,85 @@ main {
 				}
 			}
 		}
+		
+		.section-comments {
+			background-color: $color-white;
+			margin-top: 169px;
+			
+			h2 {
+				font-family: 'Epilogue';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 33px;
+				text-align: center;
+				margin-bottom: 54px;
+			}
+			
+			&__review {
+				max-width: 330px;
+				background-color: #F3F3F3;
+				
+				.text {
+					margin: 24px 0 0 28px;
+					
+					p {
+						font-family: Epilogue;
+						font-size: 20px;
+						font-weight: 600;
+						line-height: 30px;
+						text-align: left;
+						
+						max-width: 252px;
+						// margin: 24px 0 0 28px;
+						// padding: 24px;
+					}
+				}
+				
+				.clients {
+					// position: relative;
+					margin-top: 134px;
+					display: flex;
+					// justify-content: space-between;
+					gap: 13px;
+					// margin: 134px 0 28px 0;
+					padding-left: 28px;
+					// background-color: antiquewhite;
+					
+					img {
+						
+						.people {
+							max-width: 100%;
+							max-height: 100%;
+						}
+					}
+					
+					.stars {
+						// margin-left: 50px;
+						// align-items: center;
+
+						p {
+							// max-width: 135px;
+							font-family: Epilogue;
+							font-size: 17px;
+							font-weight: 400;
+							line-height: 27px;
+							text-align: left;
+						}
+					}
+				}
+				// p {
+				// 	font-family: Epilogue;
+				// 	font-size: 20px;
+				// 	font-weight: 600;
+				// 	line-height: 30px;
+				// 	text-align: left;
+					
+				// 	max-width: 252px;
+				// 	margin: 24px 0 0 28px;
+				// 	// padding: 24px;
+				// }
+			}
+		}
 	}
 }

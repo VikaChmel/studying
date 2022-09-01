@@ -279,3 +279,48 @@ main .container-main .section-works__box p {
   font-size: 17px;
   line-height: 27px;
 }
+main .container-main .section-comments {
+  background-color: #FFFFFF;
+  margin-top: 169px;
+}
+main .container-main .section-comments h2 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 54px;
+}
+main .container-main .section-comments__review {
+  max-width: 330px;
+  background-color: #F3F3F3;
+}
+main .container-main .section-comments__review .text {
+  margin: 24px 0 0 28px;
+}
+main .container-main .section-comments__review .text p {
+  font-family: Epilogue;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  max-width: 252px;
+}
+main .container-main .section-comments__review .clients {
+  margin-top: 134px;
+  display: flex;
+  gap: 13px;
+  padding-left: 28px;
+}
+main .container-main .section-comments__review .clients img .people {
+  max-width: 100%;
+  max-height: 100%;
+}
+main .container-main .section-comments__review .clients .stars p {
+  font-family: Epilogue;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
