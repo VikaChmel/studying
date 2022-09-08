@@ -4,15 +4,32 @@
 $color-black:#2D2D2D;
 $color-white:#FFFFFF;
 
+// html {
+// 	height: 100%;
+
+// 	body {
+// 		height: 100%;
+// 	}
+// }
+
+body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
 .header {
-	margin: auto;
-	max-width: 1280px;
-	padding: 0 20px;
 	
 	.container-header {
-		max-width: 100%;
+		background-color: $color-white;
+		margin: auto;
+		max-width: 1280px;
 		height: 80px;
-		background: $color-white;
+		padding: 0 20px;
 		
 		display: flex;
 		align-items: center;
@@ -45,8 +62,10 @@ $color-white:#FFFFFF;
 }
 
 main {
+	flex: 1 1 auto;
 	
 	.container-main {
+		background-color: $color-white;
 		max-width: 1180px;
 		margin: auto;
 		padding: 0 20px;
@@ -123,7 +142,7 @@ main {
 		
 		.section-social {
 			background-color: $color-white;
-			margin-top: 145px;
+			margin-top: 160px;
 			
 			&__icons {
 				display: flex;
@@ -134,13 +153,14 @@ main {
 			}
 		}
 		
-		.section-products {
+		.section-products {	
 			background-color: $color-white;
-			margin-top: 148px;
+			margin-top: 160px;
 			display: flex;
 			justify-content: center;
 			gap: 140px;
-			// position: relative;
+			flex-wrap: wrap;
+			align-items: center;
 			
 			&__box {
 				// width: 30%;
@@ -150,12 +170,12 @@ main {
 				align-items: center;
 				text-align: center;
 				
-				h2 {
-				font-family: Epilogue;
-				font-size: 27px;
-				font-weight: 600;
-				line-height: 42px;
-				margin: 63px 0 19px 0;
+				.caption {
+					font-family: Epilogue;
+					font-size: 27px;
+					font-weight: 600;
+					line-height: 42px;
+					margin: 63px 0 19px 0;
 				}
 				
 				p {
@@ -165,63 +185,70 @@ main {
 				font-weight: 400;
 				line-height: 27px;
 				}
-			}
-			
-			.box-1 {
-				position: relative;
 				
-				&::after {
-					content: url(/figma/images/arrow2.svg);
-					transform: rotate(135deg);
-					position: absolute;
-					top: 120px;
-					right: 85px;
+				img {
+					height: 130px;
 				}
-			}
-			
-			.box-2 {
-				position: relative;
 				
-				&::after {
-					content: url(/figma/images/arrow3.svg);
-					transform: rotate(90deg);
-					position: absolute;
-					top: 73px;
-					right: 55px;
+				.image-1 {
+					position: relative;
+					
+					&::after {
+						content: url(/figma/images/arrow2.svg);
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%) rotate(135deg);
+					}
 				}
-			}
-			
-			.box-3 {
-				position: relative;
 				
-				&::after {
-					content: url(/figma/images/arrow1.svg);
-					position: absolute;
-					top: 134px;
-					right: 140px;
+				.image-2 {
+					position: relative;
+					
+					&::after {
+						content: url(/figma/images/arrow3.svg);
+						position: absolute;
+						top: 10%;
+						left: 50%;
+						transform: rotate(90deg);
+					}
+				}
+				
+				.image-3 {
+					position: relative;
+					
+					&::after {
+						content: url(/figma/images/arrow1.svg);
+						position: absolute;
+						top: 55%;
+						right: 55%;
+					}
 				}
 			}
 		}
 		
-		.section-works {
+		.section {
 			background-color: $color-white;
-			margin-top: 126px;
+			margin-top: 160px;
 			
-			h2 {
-				font-family: Epilogue;
-				font-size: 32px;
+			.title {
+				font-family: 'Epilogue';
 				font-weight: 600;
-				line-height: 42px;
+				font-size: 32px;
+				line-height: 37px;
 				text-align: center;
-				margin-bottom: 56px;
+				margin-bottom: 55px;
 			}
-			
-			&__container {
+
+			.container {
 				display: flex;
-				justify-content: center;
 				gap: 45px;
+				justify-content: center;
 				flex-wrap: wrap;
 			}
+		}
+		
+		.section-works {
 			
 			&__box {
 				max-width: 330px;
@@ -250,25 +277,13 @@ main {
 		}
 		
 		.section-comments {
-			background-color: $color-white;
-			margin-top: 169px;
-			
-			h2 {
-				font-family: 'Epilogue';
-				font-style: normal;
-				font-weight: 600;
-				font-size: 32px;
-				line-height: 33px;
-				text-align: center;
-				margin-bottom: 54px;
-			}
 			
 			&__review {
 				max-width: 330px;
 				background-color: #F3F3F3;
+				padding: 25px;
 				
 				.text {
-					margin: 24px 0 0 28px;
 					
 					p {
 						font-family: Epilogue;
@@ -276,32 +291,18 @@ main {
 						font-weight: 600;
 						line-height: 30px;
 						text-align: left;
-						
-						max-width: 252px;
-						// margin: 24px 0 0 28px;
-						// padding: 24px;
 					}
 				}
 				
 				.clients {
-					// position: relative;
 					margin-top: 134px;
 					display: flex;
-					// justify-content: space-between;
-					gap: 13px;
-					// margin: 134px 0 28px 0;
-					padding-left: 28px;
+					gap: 17px;
 					
-					.img {
-						width: 100%;
-					}
-					
-					.stars {
-						// margin-left: 50px;
-						// align-items: center;
+					.evaluation {
 						
 						p {
-							// max-width: 135px;
+							max-width: 135px;
 							font-family: Epilogue;
 							font-size: 17px;
 							font-weight: 400;
@@ -310,18 +311,103 @@ main {
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+.footer {
+	margin-top: 160px;
+	
+	&__container {
+		background-color: $color-white;
+		max-width: 1180px;
+		margin: auto;
+		// margin: 160px auto 0;
+		padding: 0 20px;
+		
+		display: flex;
+		gap: 190px;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	&__information {
+		
+		.text {
+			
+			h2 {
+				font-family: Epilogue;
+				font-size: 32px;
+				font-weight: 600;
+				line-height: 42px;
+				text-align: left;
+				margin-bottom: 35px;
+			}
+			
+			P {
+				font-family: Epilogue;
+				font-size: 17px;
+				font-weight: 400;
+				line-height: 27px;
+				text-align: left;
+				max-width: 360px;
+			}
+		}
+		
+		.icons {
+			display: flex;
+			gap: 19px;
+			align-items: center;
+			margin-top: 55px;
+
+			img {
+				width: 30px;
+			}
+		}
+	}
+
+	&__form {
+		
+		.user-data {
+			display: flex;
+			flex-direction: column;
+			gap: 18px;
+			
+			.info {
+				background-color: #F3F3F3;
+				width: 530px;
+				height: 70px;
+				padding: 20px;
 				
-				// p {
-				// 	font-family: Epilogue;
-				// 	font-size: 20px;
-				// 	font-weight: 600;
-				// 	line-height: 30px;
-				// 	text-align: left;
-					
-				// 	max-width: 252px;
-				// 	margin: 24px 0 0 28px;
-				// 	// padding: 24px;
-				// }
+				font-family: Epilogue;
+				font-size: 17px;
+				font-weight: 400;
+				line-height: 27px;
+				text-align: left;
+			}
+			
+			.textarea {
+				height: 215px;
+			}
+		}
+		
+		button {
+			background-color: $color-black;
+			width: 235px;
+			height: 80px;
+			margin-top: 43px;
+			
+			font-family: Epilogue;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 30px;
+			text-align: center;
+			color: $color-white;
+			
+			&:hover {
+				text-decoration-line: underline;
+				text-decoration-color: rgb(196, 196, 196);
 			}
 		}
 	}
