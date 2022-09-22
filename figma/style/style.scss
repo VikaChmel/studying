@@ -16,12 +16,6 @@ html {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-
-	// @media (max-width: 375px) {
-	// 	.wrapper {
-
-	// 	}
-	// }
 }
 
 .header {
@@ -36,8 +30,8 @@ html {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-
-		@media (max-width: 375px) {
+		
+		@media (max-width: 475px) {
 			justify-content: center;
 		}
 	}
@@ -49,8 +43,8 @@ html {
 		font-weight: 600;
 		font-size: 20px;
 		line-height: 30px;
-
-		@media (max-width: 375px) {
+		
+		@media (max-width: 475px) {
 			align-items: center;
 		}
 	}
@@ -59,8 +53,8 @@ html {
 		display: flex;
 		gap: 50px;
 		text-decoration-line: underline;
-
-		@media (max-width: 375px) {
+		
+		@media (max-width: 475px) {
 			display: none;
 		}
 		
@@ -92,7 +86,7 @@ main {
 			justify-content: space-between;
 			align-items: center;
 			
-			@media (max-width: 375px) {
+			@media (max-width: 570px) {
 				flex-direction: column;
 				gap: 70px;
 			}
@@ -100,9 +94,12 @@ main {
 			&__text {
 				max-width: 463px;
 				
+				@media (max-width: 570px) {
+					align-items: center;
+				}
+				
 				p {
 					font-family: Epilogue;
-					text-align: left;
 				}
 				
 				p:first-child {
@@ -110,7 +107,7 @@ main {
 					font-weight: 600;
 					line-height: 30px;
 					
-					@media (max-width: 375px) {
+					@media (max-width: 570px) {
 						text-align: center;
 					}
 				}
@@ -121,7 +118,7 @@ main {
 					line-height: 102.5px;
 					margin: 46px 0 50px 0;
 					
-					@media (max-width: 375px) {
+					@media (max-width: 570px) {
 						text-align: center;
 						max-width: 320px;
 						font-size: 65px;
@@ -135,7 +132,7 @@ main {
 					font-weight: 400;
 					line-height: 27px;
 					
-					@media (max-width: 375px) {
+					@media (max-width: 570px) {
 						text-align: center;
 						line-height: 27px;
 					}
@@ -144,35 +141,36 @@ main {
 			
 			&__image {
 				position: relative;
+				max-width: 100%;
 				
-				.img::before {
-					content: url(/figma/images/arrow3.svg);
-					position: absolute;
-					z-index: 3;
-					right: 330px;
-					top: 23px;
-				}
+				// .img::before {
+				// 	content: url(/figma/images/arrow3.svg);
+				// 	position: absolute;
+				// 	z-index: 3;
+				// 	right: 80%;
+				// 	top: 5%;
+				// }
 				
-				.img::after {
-					content: url(/figma/images/arrow.png);
-					position: absolute;
-					left: 342px;
-					top: 463px;
-				}
+				// .img::after {
+				// 	content: url(/figma/images/arrow.png);
+				// 	position: absolute;
+				// 	left: 83%;
+				// 	top: 85%;
+				// }
 				
-				.decorator-img {
-					position: absolute;
+				// .decorator-img {
+				// 	position: absolute;
 					
-					&:first-child {
-						left: 298px;
-						bottom: 435px;
-					}
+				// 	&:first-child {
+				// 		left: 298px;
+				// 		bottom: 435px;
+				// 	}
 					
-					&:last-child {
-						bottom: 64px;
-						right: 346px;
-					}
-				}
+				// 	&:last-child {
+				// 		bottom: 64px;
+				// 		right: 346px;
+				// 	}
+				// }
 			}
 		}
 		
@@ -409,10 +407,19 @@ main {
 	&__form {
 		min-width: 530px;
 		
+		@media (max-width: 570px) {
+			min-width: unset;
+			width: 100%;
+			gap: 50px;
+		}
+		
 		.user-data {
 			display: flex;
 			flex-direction: column;
-			gap: 18px;
+
+			@media (max-width: 570px) {
+				gap: 15px;
+			}
 			
 			.info {
 				background-color: #F3F3F3;
@@ -439,6 +446,11 @@ main {
 			line-height: 30px;
 			text-align: center;
 			color: $color-white;
+			
+			@media (max-width: 570px) {
+				width: 100%;
+				padding: 25px 0;
+			}
 			
 			&:hover {
 				text-decoration-line: underline;
