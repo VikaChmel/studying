@@ -4,22 +4,24 @@
 $color-black:#2D2D2D;
 $color-white:#FFFFFF;
 
-// html {
-// 	height: 100%;
-
-// 	body {
-// 		height: 100%;
-// 	}
-// }
-
-body {
+html {
 	height: 100%;
+	
+	body {
+		height: 100%;
+	}
 }
 
 .wrapper {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
+
+	// @media (max-width: 375px) {
+	// 	.wrapper {
+
+	// 	}
+	// }
 }
 
 .header {
@@ -34,6 +36,10 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@media (max-width: 375px) {
+			justify-content: center;
+		}
 	}
 	
 	&__logo {
@@ -43,12 +49,20 @@ body {
 		font-weight: 600;
 		font-size: 20px;
 		line-height: 30px;
+
+		@media (max-width: 375px) {
+			align-items: center;
+		}
 	}
 	
 	&__link {
 		display: flex;
 		gap: 50px;
 		text-decoration-line: underline;
+
+		@media (max-width: 375px) {
+			display: none;
+		}
 		
 		a {
 			color: $color-black;
@@ -74,8 +88,14 @@ main {
 			background: $color-white;
 			margin-top: 93px;
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: center;
+			
+			@media (max-width: 375px) {
+				flex-direction: column;
+				gap: 70px;
+			}
 			
 			&__text {
 				max-width: 463px;
@@ -89,6 +109,10 @@ main {
 					font-size: 20px;
 					font-weight: 600;
 					line-height: 30px;
+					
+					@media (max-width: 375px) {
+						text-align: center;
+					}
 				}
 				
 				p:nth-child(2) {
@@ -96,6 +120,13 @@ main {
 					font-weight: 600;
 					line-height: 102.5px;
 					margin: 46px 0 50px 0;
+					
+					@media (max-width: 375px) {
+						text-align: center;
+						max-width: 320px;
+						font-size: 65px;
+						line-height: 66px;
+					}
 				}
 				
 				p:last-child {
@@ -103,6 +134,11 @@ main {
 					font-size: 17px;
 					font-weight: 400;
 					line-height: 27px;
+					
+					@media (max-width: 375px) {
+						text-align: center;
+						line-height: 27px;
+					}
 				}
 			}
 			
@@ -147,9 +183,10 @@ main {
 			&__icons {
 				display: flex;
 				flex-wrap: wrap;
-				justify-content: space-between;
+				justify-content: center;
 				align-items: center;
-				gap: 50px;
+				column-gap: 100px;
+				row-gap: 20px;
 			}
 		}
 		
@@ -318,12 +355,12 @@ main {
 
 .footer {
 	margin-top: 160px;
+	padding-bottom: 100px;
 	
 	&__container {
 		background-color: $color-white;
 		max-width: 1180px;
 		margin: auto;
-		// margin: 160px auto 0;
 		padding: 0 20px;
 		
 		display: flex;
@@ -335,23 +372,20 @@ main {
 	&__information {
 		
 		.text {
+			max-width: 360px;
 			
 			h2 {
 				font-family: Epilogue;
 				font-size: 32px;
 				font-weight: 600;
 				line-height: 42px;
-				text-align: left;
 				margin-bottom: 35px;
 			}
 			
 			P {
 				font-family: Epilogue;
 				font-size: 17px;
-				font-weight: 400;
 				line-height: 27px;
-				text-align: left;
-				max-width: 360px;
 			}
 		}
 		
@@ -360,14 +394,20 @@ main {
 			gap: 19px;
 			align-items: center;
 			margin-top: 55px;
-
-			img {
+			
+				a {
+					display: block;
+					max-width: fit-content;
+				}
+			
+			svg {
 				width: 30px;
 			}
 		}
 	}
-
+	
 	&__form {
+		min-width: 530px;
 		
 		.user-data {
 			display: flex;
@@ -376,15 +416,11 @@ main {
 			
 			.info {
 				background-color: #F3F3F3;
-				width: 530px;
-				height: 70px;
 				padding: 20px;
 				
 				font-family: Epilogue;
 				font-size: 17px;
-				font-weight: 400;
 				line-height: 27px;
-				text-align: left;
 			}
 			
 			.textarea {
@@ -394,8 +430,7 @@ main {
 		
 		button {
 			background-color: $color-black;
-			width: 235px;
-			height: 80px;
+			padding: 25px 82px;
 			margin-top: 43px;
 			
 			font-family: Epilogue;

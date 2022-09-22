@@ -73,7 +73,10 @@ textarea {
   resize: none;
 }
 
-body {
+html {
+  height: 100%;
+}
+html body {
   height: 100%;
 }
 
@@ -93,6 +96,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 375px) {
+  .header .container-header {
+    justify-content: center;
+  }
+}
 .header__logo {
   color: #2D2D2D;
   font-family: "Epilogue";
@@ -101,11 +109,21 @@ body {
   font-size: 20px;
   line-height: 30px;
 }
+@media (max-width: 375px) {
+  .header__logo {
+    align-items: center;
+  }
+}
 .header__link {
   display: flex;
   gap: 50px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+@media (max-width: 375px) {
+  .header__link {
+    display: none;
+  }
 }
 .header__link a {
   color: #2D2D2D;
@@ -129,8 +147,15 @@ main .container-main .section-headline {
   background: #FFFFFF;
   margin-top: 93px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 375px) {
+  main .container-main .section-headline {
+    flex-direction: column;
+    gap: 70px;
+  }
 }
 main .container-main .section-headline__text {
   max-width: 463px;
@@ -144,17 +169,36 @@ main .container-main .section-headline__text p:first-child {
   font-weight: 600;
   line-height: 30px;
 }
+@media (max-width: 375px) {
+  main .container-main .section-headline__text p:first-child {
+    text-align: center;
+  }
+}
 main .container-main .section-headline__text p:nth-child(2) {
   font-size: 100px;
   font-weight: 600;
   line-height: 102.5px;
   margin: 46px 0 50px 0;
 }
+@media (max-width: 375px) {
+  main .container-main .section-headline__text p:nth-child(2) {
+    text-align: center;
+    max-width: 320px;
+    font-size: 65px;
+    line-height: 66px;
+  }
+}
 main .container-main .section-headline__text p:last-child {
   max-width: 417px;
   font-size: 17px;
   font-weight: 400;
   line-height: 27px;
+}
+@media (max-width: 375px) {
+  main .container-main .section-headline__text p:last-child {
+    text-align: center;
+    line-height: 27px;
+  }
 }
 main .container-main .section-headline__image {
   position: relative;
@@ -190,9 +234,11 @@ main .container-main .section-social {
 main .container-main .section-social__icons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 50px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  row-gap: 20px;
 }
 main .container-main .section-products {
   background-color: #FFFFFF;
@@ -323,6 +369,7 @@ main .container-main .section-comments__review .clients .evaluation p {
 
 .footer {
   margin-top: 160px;
+  padding-bottom: 100px;
 }
 .footer__container {
   background-color: #FFFFFF;
@@ -334,21 +381,20 @@ main .container-main .section-comments__review .clients .evaluation p {
   justify-content: center;
   flex-wrap: wrap;
 }
+.footer__information .text {
+  max-width: 360px;
+}
 .footer__information .text h2 {
   font-family: Epilogue;
   font-size: 32px;
   font-weight: 600;
   line-height: 42px;
-  text-align: left;
   margin-bottom: 35px;
 }
 .footer__information .text P {
   font-family: Epilogue;
   font-size: 17px;
-  font-weight: 400;
   line-height: 27px;
-  text-align: left;
-  max-width: 360px;
 }
 .footer__information .icons {
   display: flex;
@@ -356,8 +402,17 @@ main .container-main .section-comments__review .clients .evaluation p {
   align-items: center;
   margin-top: 55px;
 }
-.footer__information .icons img {
+.footer__information .icons a {
+  display: block;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.footer__information .icons svg {
   width: 30px;
+}
+.footer__form {
+  min-width: 530px;
 }
 .footer__form .user-data {
   display: flex;
@@ -366,22 +421,17 @@ main .container-main .section-comments__review .clients .evaluation p {
 }
 .footer__form .user-data .info {
   background-color: #F3F3F3;
-  width: 530px;
-  height: 70px;
   padding: 20px;
   font-family: Epilogue;
   font-size: 17px;
-  font-weight: 400;
   line-height: 27px;
-  text-align: left;
 }
 .footer__form .user-data .textarea {
   height: 215px;
 }
 .footer__form button {
   background-color: #2D2D2D;
-  width: 235px;
-  height: 80px;
+  padding: 25px 82px;
   margin-top: 43px;
   font-family: Epilogue;
   font-size: 20px;
