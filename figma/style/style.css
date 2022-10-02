@@ -232,7 +232,18 @@ main .container-main .section-social__icons {
 @media (max-width: 570px) {
   main .container-main .section-social__icons {
     align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
+}
+@media (max-width: 570px) {
+  main .container-main .section-social__icons li {
+    width: 33%;
+    text-align: center;
+  }
+}
+main .container-main .section-social__icons li img {
+  max-width: 100%;
 }
 main .container-main .section-products {
   background-color: #FFFFFF;
@@ -331,11 +342,22 @@ main .container-main .section .container {
   justify-content: center;
   flex-wrap: wrap;
 }
+main .container-main .section-works__container {
+  justify-content: center;
+}
 main .container-main .section-works__box {
   max-width: 330px;
+  justify-content: center;
+}
+@media (max-width: 1120px) {
+  main .container-main .section-works__box {
+    flex: 1;
+    max-width: 400px;
+    min-width: 280px;
+  }
 }
 main .container-main .section-works__box img {
-  max-width: 100%;
+  width: 100%;
 }
 main .container-main .section-works__box h3 {
   font-family: Epilogue;
@@ -447,11 +469,7 @@ main .container-main .section-comments__review .clients .evaluation p {
 .footer__form .user-data {
   display: flex;
   flex-direction: column;
-}
-@media (max-width: 570px) {
-  .footer__form .user-data {
-    gap: 15px;
-  }
+  gap: 15px;
 }
 .footer__form .user-data .info {
   background-color: #F3F3F3;

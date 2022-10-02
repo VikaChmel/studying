@@ -193,10 +193,23 @@ main {
 				align-items: center;
 				column-gap: 100px;
 				row-gap: 20px;
-
+				
 				@media (max-width: 570px) {
 					align-items: center;
+					column-gap: 0;
 					// margin: 0 35px;
+				}
+				
+				li {
+					
+					@media (max-width: 570px) {
+						width: 33%;
+						text-align: center;
+					}
+					
+					img {
+						max-width: 100%;
+					}
 				}
 			}
 		}
@@ -311,12 +324,23 @@ main {
 		}
 		
 		.section-works {
+
+			&__container {
+				justify-content: center;
+			}
 			
 			&__box {
 				max-width: 330px;
+				justify-content: center;
+				
+				@media (max-width: 1120px) {
+					flex: 1;
+					max-width: 400px;
+					min-width: 280px;
+				}
 				
 				img {
-					max-width: 100%;
+					width: 100%;
 				}
 				
 				h3 {
@@ -455,10 +479,8 @@ main {
 		.user-data {
 			display: flex;
 			flex-direction: column;
-
-			@media (max-width: 570px) {
-				gap: 15px;
-			}
+			
+			gap: 15px;
 			
 			.info {
 				background-color: #F3F3F3;
