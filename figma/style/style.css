@@ -218,6 +218,7 @@ main .container-main .section-social {
   main .container-main .section-social {
     align-items: center;
     padding: 0 35px;
+    margin-top: 110px;
   }
 }
 main .container-main .section-social__icons {
@@ -235,6 +236,13 @@ main .container-main .section-social__icons {
     -moz-column-gap: 0;
          column-gap: 0;
     gap: 50px;
+  }
+}
+@media (min-width: 970px) {
+  main .container-main .section-social__icons {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    justify-content: space-between;
   }
 }
 @media (max-width: 570px) {
@@ -255,6 +263,12 @@ main .container-main .section-products {
   flex-wrap: wrap;
   align-items: center;
 }
+@media (min-width: 970px) {
+  main .container-main .section-products {
+    flex-wrap: nowrap;
+    margin-top: 100px;
+  }
+}
 @media (max-width: 570px) {
   main .container-main .section-products {
     margin-top: 50px;
@@ -262,7 +276,6 @@ main .container-main .section-products {
   }
 }
 main .container-main .section-products__box {
-  width: 30%;
   padding: 60px 0;
   display: flex;
   flex-direction: column;
@@ -330,6 +343,11 @@ main .container-main .section {
     margin-top: 50px;
   }
 }
+@media (min-width: 970px) {
+  main .container-main .section {
+    margin-top: 110px;
+  }
+}
 main .container-main .section .title {
   font-family: "Epilogue";
   font-weight: 600;
@@ -392,9 +410,15 @@ main .container-main .section-comments__review {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 570px) {
+@media (max-width: 745px) {
   main .container-main .section-comments__review {
     max-width: 400px;
+  }
+}
+@media (min-width: 970px) {
+  main .container-main .section-comments__review {
+    max-width: 30%;
+    min-height: 350px;
   }
 }
 main .container-main .section-comments__review .text p {
@@ -433,6 +457,12 @@ main .container-main .section-comments__review .clients .evaluation p {
   gap: 190px;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media (min-width: 970px) {
+  .footer__container {
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 @media (max-width: 570px) {
   .footer__container {
@@ -474,9 +504,13 @@ main .container-main .section-comments__review .clients .evaluation p {
 }
 @media (max-width: 570px) {
   .footer__form {
-    min-width: unset;
-    min-width: 80%;
+    min-width: 100%;
     gap: 50px;
+  }
+}
+@media (min-width: 970px) {
+  .footer__form {
+    min-width: 450px;
   }
 }
 .footer__form .user-data {

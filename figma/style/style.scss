@@ -184,6 +184,7 @@ main {
 			@media (max-width: 570px) {
 				align-items: center;
 				padding: 0 35px;
+				margin-top: 110px;
 			}
 			
 			&__icons {
@@ -198,7 +199,12 @@ main {
 					align-items: center;
 					column-gap: 0;
 					gap: 50px;
-					// margin: 0 35px;
+				}
+
+				@media (min-width: 970px) {
+					// column-gap: 200px;
+					column-gap: 0;
+					justify-content: space-between;
 				}
 				
 				li {
@@ -224,13 +230,18 @@ main {
 			flex-wrap: wrap;
 			align-items: center;
 			
+			@media (min-width: 970px) {
+				flex-wrap: nowrap;
+				margin-top: 100px;
+			}
+			
 			@media (max-width: 570px) {
 				margin-top: 50px;
 				gap: 30px;
 			}
 			
 			&__box {
-				width: 30%;
+				// width: 30%;
 				padding: 60px 0;
 				display: flex;
 				flex-direction: column;
@@ -307,6 +318,10 @@ main {
 				margin-top: 50px;
 			}
 			
+			@media (min-width: 970px) {
+				margin-top: 110px;
+			}
+			
 			.title {
 				font-family: 'Epilogue';
 				font-weight: 600;
@@ -364,7 +379,6 @@ main {
 		}
 		
 		.section-comments {
-
 			gap: 134px;
 			
 			@media (max-width: 570px) {
@@ -379,9 +393,18 @@ main {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				
-				@media (max-width: 570px) {
+
+				@media (max-width: 745px) {
 					max-width: 400px;
+				}
+				
+				// @media (max-width: 570px) {
+				// 	max-width: 400px;
+				// }
+				
+				@media (min-width: 970px) {
+					max-width: 30%;
+					min-height: 350px;
 				}
 				
 				.text {
@@ -391,7 +414,6 @@ main {
 						font-size: 20px;
 						font-weight: 600;
 						line-height: 30px;
-						// text-align: left;
 					}
 				}
 				
@@ -435,6 +457,11 @@ main {
 		gap: 190px;
 		justify-content: center;
 		flex-wrap: wrap;
+		
+		@media (min-width: 970px) {
+			gap: 0;
+			justify-content: space-between;
+		}
 		
 		@media (max-width: 570px) {
 			gap: 110px;
@@ -486,9 +513,12 @@ main {
 		min-width: 530px;
 		
 		@media (max-width: 570px) {
-			min-width: unset;
-			min-width: 80%;
+			min-width: 100%;
 			gap: 50px;
+		}
+		
+		@media (min-width: 970px) {
+			min-width: 450px;
 		}
 		
 		.user-data {
