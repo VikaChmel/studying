@@ -234,6 +234,7 @@ main .container-main .section-social__icons {
     align-items: center;
     -moz-column-gap: 0;
          column-gap: 0;
+    gap: 50px;
   }
 }
 @media (max-width: 570px) {
@@ -261,6 +262,7 @@ main .container-main .section-products {
   }
 }
 main .container-main .section-products__box {
+  width: 30%;
   padding: 60px 0;
   display: flex;
   flex-direction: column;
@@ -373,6 +375,9 @@ main .container-main .section-works__box p {
   font-size: 17px;
   line-height: 27px;
 }
+main .container-main .section-comments {
+  gap: 134px;
+}
 @media (max-width: 570px) {
   main .container-main .section-comments {
     margin-top: 100px;
@@ -382,6 +387,15 @@ main .container-main .section-comments__review {
   max-width: 330px;
   background-color: #F3F3F3;
   padding: 25px;
+  min-height: 435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 570px) {
+  main .container-main .section-comments__review {
+    max-width: 400px;
+  }
 }
 main .container-main .section-comments__review .text p {
   font-family: Epilogue;
@@ -390,7 +404,6 @@ main .container-main .section-comments__review .text p {
   line-height: 30px;
 }
 main .container-main .section-comments__review .clients {
-  margin-top: 134px;
   display: flex;
   gap: 17px;
 }
@@ -462,7 +475,7 @@ main .container-main .section-comments__review .clients .evaluation p {
 @media (max-width: 570px) {
   .footer__form {
     min-width: unset;
-    width: 100%;
+    min-width: 80%;
     gap: 50px;
   }
 }
